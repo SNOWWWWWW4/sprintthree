@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    justify-content: center;
+    margin:2%;
+    font-size: 45px;
+}
+
+.subHeaderBG {
+    background-color: rgba(128, 128, 128, 0.26);
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.listBG {
+    background-color: rgba(128, 128, 128, 0.26);
+    margin-top: 2%;
+    height: 70vh;
+    border-radius: 10px;
+    padding: 4%;
+    overflow-y: scroll;
+}
+
+.btns {
+    background-color: rgba(128, 128, 128, 0.043) ;
+    border-radius: 10px;
+    width: 90px;
+}
+
+.btns2 {
+    background-color: rgba(128, 128, 128, 0.043) ;
+    border-radius: 10px;
+    width: 50px;
+}
+
+.btns:hover {
+    transform: translateY(4px);
+    background-color: rgba(128, 128, 128, 0.461) ;
+}
+
+.btns2:hover {
+    transform: translateY(4px);
+    background-color: rgba(128, 128, 128, 0.461) ;
+}
+
+/* style for table element created */
+.created-table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px; /* Rounded edges */
+    overflow: hidden; 
+}
+
+/* setting border color */
+.created-table th, .created-table td {
+    border: 1px solid white; 
+    padding: 8px;
+    text-align: left;
+}
+
+.created-table th {
+    background-color: white;
+}
+
+/* Striped pattern for rows */
+.created-table tr:nth-child(even) {
+    background-color: #f2f2f20c; 
+}
+
+.created-table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.202); 
+}
+
+/* Hover effect for rows */
+.created-table tr:hover {
+    background-color: #ddd;
+
+}
+
+.created-table tr:hover td {
+    color: black; 
+}
