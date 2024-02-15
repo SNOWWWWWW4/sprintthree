@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet">
+  <title>Landing Page</title>
+</head>
+
+<body class="bg-cover text-white" style="background-image: url(./asssets/milad-fakurian-lxwahh7j5Qw-unsplash.jpg);">
+    
+    <div class="m-5">
+
+        <!-- Header -->
+        <div class="mx-auto">
+            <h1 class="header">Creating stuff with data</h1>
+            <!-- subheader -->
+            <div class="subHeaderBG grid grid-cols-6">
+                <div class="flex flex-row">
+
+                    <div style="margin-left: 3%;">
+                        <button id="sortByFirst" type="button" class="btns">First Name</button>
+                    </div>
+                    <div style="margin-left: 6.8%;">
+                        <button  id="sortByLast"type="button" class="btns">Last Name</button>
+                    </div>
+                    <div style="margin-left: 10%;">
+                        <button type="button" class="btns">Email</button>
+                    </div>
+                    
+                    <div style="margin-left: 33%;">
+                        <button id="sortByHeight" type="button" class="btns">Height</button>
+                    </div>
+                    <div style="margin-left: 4%;">
+                        <button type="button" class="btns2">Age</button>
+                    </div>
+                    <div style="margin-left: 3%;">
+                        <button id="sortById" type="button" class="btns2">Id</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- List -->
+        
+        <div class="listBG">
+            <div class="h-8">
+                <div id="tableDiv" class="mx-auto mt-5 w-full "></div>
+            </div>
+        </div>
+    </div>
+ 
+  
+  <script type="module" src="./scripts/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
