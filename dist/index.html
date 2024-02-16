@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="./output.css" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet">
+  <title>Sprint Three</title>
+</head>
+
+<body class="bg-cover text-white" style="background-image: url(./asssets/milad-fakurian-lxwahh7j5Qw-unsplash.jpg);">
+    
+    <div class="m-5">
+
+        <!-- Header -->
+        <div class="mx-auto">
+            <h1 class="header">Creating stuff with data</h1>
+            <!-- subheader -->
+            <div class="subHeaderBG grid grid-row">
+                <p class="text-center w-full inline-block">
+                    * The table will automatically arrange itself in either ascending or descending order according to the header clicked *
+                </p>
+            </div>
+        </div>
+
+        
+        <!-- List -->
+        <div class="listBG">
+            <div style="padding-left: 1%; padding-top: 1%;">
+                <button id="refresh" type="button" class="refreshBtn"><img src="./asssets/arrow-clockwise-bold.png" alt="arrow-clockwise"/></button>
+            </div>
+            <!-- buttons/ headers -->
+            <div class="flex flex-row" style="padding-left: 4%;">
+                <div>
+                    <button id="sortByFirstBtn" type="button" class="btns">First Name</button>
+                </div>
+                <div style="margin-left: 6.2%;">
+                    <button  id="sortByLastBtn"type="button" class="btns">Last Name</button>
+                </div>
+                <div style="margin-left: 10%;">
+                    <button id="sortByEmailBtn" type="button" class="btns">Email</button>
+                </div>
+                <div style="margin-left: 33.5%;">
+                    <button id="sortByHeightBtn" type="button" class="btns">Height</button>
+                </div>
+                <div style="margin-left: 6.2%;">
+                    <button id="sortByAgeBtn" type="button" class="btns2">Age</button>
+                </div>
+                <div style="margin-left: 1.5%;">
+                    <button id="sortByIdBtn" type="button" class="btns2">Id</button>
+                </div>
+            </div>
+
+            <!-- table display -->
+            <div class="h-8">
+                <div id="tableDiv" class="mx-auto mt-5 w-full "></div>
+            </div>
+
+            <!-- scroll arrow ?-->
+            <div></div>
+        </div>
+    </div>
+ 
+  
+  <script type="module" src="./scripts/app.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  
+</body>
+</html>

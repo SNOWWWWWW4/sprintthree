@@ -1,3 +1,4 @@
+/* text styling */
 .header {
     display: flex;
     justify-content: center;
@@ -5,21 +6,40 @@
     font-size: 45px;
 }
 
+.subheader {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* background styling */
 .subHeaderBG {
     background-color: rgba(128, 128, 128, 0.26);
     padding: 1%;
     border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .listBG {
     background-color: rgba(128, 128, 128, 0.26);
-    margin-top: 2%;
-    height: 70vh;
     border-radius: 10px;
-    padding: 4%;
-    overflow-y: scroll;
+    height: 70vh;
+    margin: 2%;
+    position: relative;
 }
 
+#tableDiv {
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    max-height: 55vh;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+
+/* button styling */
 .btns {
     background-color: rgba(128, 128, 128, 0.043) ;
     border-radius: 10px;
@@ -32,25 +52,44 @@
     width: 50px;
 }
 
-.btns:hover {
-    transform: translateY(4px);
-    background-color: rgba(128, 128, 128, 0.461) ;
-}
-
+.btns:hover,
 .btns2:hover {
     transform: translateY(4px);
     background-color: rgba(128, 128, 128, 0.461) ;
 }
 
-/* style for table element created */
+.btns:active,
+.btns2:active {
+    border-color: white;
+    border-width: 1px;
+}
+
+.refreshBtn {
+    border-radius: 10px; 
+    background-color: transparent;
+    width:24px;
+}
+
+.refreshBtn:hover {
+    background-color: rgba(128, 128, 128, 0.461);
+    width: 26px;
+}
+
+.refreshBtn:active {
+    transform: translateY(4px);
+}
+
+
+
+/* styling for table element created */
 .created-table {
     border-collapse: collapse;
     width: 100%;
-    border-radius: 10px; /* Rounded edges */
+    border-radius: 10px; 
     overflow: hidden; 
 }
 
-/* setting border color */
+/* styling for borders and text */
 .created-table th, .created-table td {
     border: 1px solid white; 
     padding: 8px;
@@ -61,7 +100,7 @@
     background-color: white;
 }
 
-/* Striped pattern for rows */
+/* striped pattern for rows */
 .created-table tr:nth-child(even) {
     background-color: #f2f2f20c; 
 }
@@ -70,7 +109,7 @@
     background-color: rgba(255, 255, 255, 0.202); 
 }
 
-/* Hover effect for rows */
+/* hover effect for rows */
 .created-table tr:hover {
     background-color: #ddd;
 
